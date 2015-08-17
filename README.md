@@ -21,4 +21,4 @@
 * 输入 `bundle exec jekyll build -d 部署目录的相对路径` 生成静态网页到部署目录中
 * `commit` 并 `push` 到 GitHub 上
 
-上述操作都做完，即可访问 (http://fe.youyu.im/) 查看效果。
+上述操作都做完，即可访问 [http://fe.youyu.im/](http://fe.youyu.im/) 查看效果。
