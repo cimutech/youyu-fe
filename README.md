@@ -31,7 +31,15 @@
 rake ui_examples
 ```
 
-该任务会根据 `_data/navs.json` 中所定义的数据生成样例页面文件 到 `_docs/ui/examples/` 文件夹里。
+该任务会根据 `_data/navs.json` 中所定义的数据生成样例页面文件到 `_docs/ui/examples/` 文件夹里。
+
+### 生成 [YouYu 对象](http://fe.youyu.im/docs/youyu/)的 API 页面
+
+```shell
+rake youyu_apis
+```
+
+该任务会根据 `_data/navs.json` 中所定义的数据生成 API 页面文件到 `_docs/youyu/apis/` 文件夹里。
 
 ### 运行程序
 
@@ -39,7 +47,7 @@ rake ui_examples
 rake run
 ```
 
-**该任务会调用 `rake ui_examples`**
+**该任务会调用 `rake ui_examples` 和 `rake youyu_apis`。**
 
 ### 部署
 
@@ -47,4 +55,4 @@ rake run
 rake deploy
 ```
 
-**该任务会调用 `rake ui_examples`**
+**该任务会调用 `rake ui_examples` 和 `rake youyu_apis`。**
