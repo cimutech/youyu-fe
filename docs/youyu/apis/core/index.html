@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="zh-CN" dir="ltr" data-layout="sandwich"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>核心 - 有渔前端团队</title><meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-"><link rel="shortcut icon" href="/assets/favicon-622dec389ae4e3d07eca53ad857a69f4.png"><link rel="icon" href="/assets/favicon-5a093adcde5c588c8e4ea9dcd77bdf4c.ico"><link rel="stylesheet" href="/assets/global-48c8778aeb205f000acc02ecbbe574f9.css"><link rel="stylesheet" href="/assets/pages/docs-4ac0c4b1d13e43949a2ad5f9d4e30a6c.css"> <script src="/assets/global-ef9388226d1162d81f181cecc47b52a6.js"></script><!--[if lt IE 9]><script src="/assets/support_ie8-88800734a0bafc4f91fe1d1fe0ce2289.js"></script><![endif]--></head><body itemscope itemtype="http://schema.org/WebPage" class="layout--sandwich" data-page="none"> <header class="layout-header"><div class="navbar navbar-static-top"><div class="container"><div class="navbar-header"> <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".Header-navs"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button><h1 class="Header-brand navbar-brand"> <a href="/" title="有渔前端团队"> <span class="sr-only">有渔前端团队</span> <img src="/assets/logo-9fd24fb216fe5f9895da9e80e08e37a6.png" srcset="/assets/logo@2x-811b7b581c8fe20b05b670aae3268199.png 2x" class="Header-logo"> </a></h1></div> <nav class="Header-navs navbar-collapse collapse"><ul class="Menu nav navbar-nav navbar-right"><li><a href=" /" title="首页">首页</a></li><li class="is-selected"><a href="/docs/" title="文档">文档</a></li><li><a href="/demos/" title="演示">演示</a></li><li><a href="/about/" title="关于">关于</a></li></ul> </nav></div></div> </header> <main class="layout-container"><div class="layout-content"> <nav class="layout-breadcrumb"><div class="container"><ol class="breadcrumb"><li><a href="/">首页</a></li><li><a href="/docs/">文档</a></li><li><a href="/docs/youyu/">YouYu 对象</a></li><li class="active">核心</li></ol></div> </nav><header class="Doc-header"><div class="container"><h1>API</h1><p>了解如何去用 YouYu 对象</p></div> </header><div class="Doc-container container"><div class="row"> <section class="Doc-content col-md-9"> <header><h1 id="core">核心</h1> </header><h2>目录</h2><ul class="Doc-content--toc"><li> <a href="#Setting">名称设置</a><ul><li><a href="#Setting-mask">mask</a></li><li><a href="#Setting-alias">alias</a></li></ul></li><li> <a href="#Extension">扩展能力</a><ul><li><a href="#Extension-mixin">mixin</a></li><li><a href="#Extension-extend">extend</a></li></ul></li></ul><h2 id="Setting">名称设置</h2><h3 id="Setting-mask">mask</h3><p>更改 YouYu 依附在全局对象上的名字。</p><div class="Api"> <code class="Api-invoke">YouYu.mask(guise)</code> <span class="Api-returnValue">Boolean</span><dl class="Api-parameters"><dt>guise</dt><dd><p>[String]</p></dd></dl></div><p>原来的名字会被删除，即访问 <code>YouYu</code> 会报错。</p><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">mask</span><span class="p">(</span><span class="s2">"YouYu_new"</span><span class="p">);</span>
+"><link rel="shortcut icon" href="/assets/favicon-622dec389ae4e3d07eca53ad857a69f4.png"><link rel="icon" href="/assets/favicon-5a093adcde5c588c8e4ea9dcd77bdf4c.ico"><link rel="stylesheet" href="/assets/global-48c8778aeb205f000acc02ecbbe574f9.css"><link rel="stylesheet" href="/assets/pages/docs-4ac0c4b1d13e43949a2ad5f9d4e30a6c.css"> <script src="/assets/global-ef9388226d1162d81f181cecc47b52a6.js"></script><!--[if lt IE 9]><script src="/assets/support_ie8-88800734a0bafc4f91fe1d1fe0ce2289.js"></script><![endif]--></head><body itemscope itemtype="http://schema.org/WebPage" class="layout--sandwich" data-page="none"> <header class="layout-header"><div class="navbar navbar-static-top"><div class="container"><div class="navbar-header"> <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".Header-navs"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button><h1 class="Header-brand navbar-brand"> <a href="/" title="有渔前端团队"> <span class="sr-only">有渔前端团队</span> <img src="/assets/logo-9fd24fb216fe5f9895da9e80e08e37a6.png" srcset="/assets/logo@2x-811b7b581c8fe20b05b670aae3268199.png 2x" class="Header-logo"> </a></h1></div> <nav class="Header-navs navbar-collapse collapse"><ul class="Menu nav navbar-nav navbar-right"><li><a href=" /" title="首页">首页</a></li><li class="is-selected"><a href="/docs/" title="文档">文档</a></li><li><a href="/demos/" title="演示">演示</a></li><li><a href="/about/" title="关于">关于</a></li></ul> </nav></div></div> </header> <main class="layout-container"><div class="layout-content"> <nav class="layout-breadcrumb"><div class="container"><ol class="breadcrumb"><li><a href="/">首页</a></li><li><a href="/docs/">文档</a></li><li><a href="/docs/youyu/">YouYu 对象</a></li><li class="active">核心</li></ol></div> </nav><header class="Doc-header"><div class="container"><h1>API</h1><p>了解如何去用 YouYu 对象</p></div> </header><div class="Doc-container container"><div class="row"> <section class="Doc-content col-md-9"> <header><h1 id="core">核心</h1> </header><h2>目录</h2><ul class="Doc-content--toc"><li> <a href="#Setting">名称设置</a><ul><li><a href="#Setting-mask">mask</a></li><li><a href="#Setting-alias">alias</a></li></ul></li><li> <a href="#Extension">扩展能力</a><ul><li><a href="#Extension-mixin">mixin</a></li><li><a href="#Extension-extend">extend</a></li></ul></li><li> <a href="#String">字符串</a><ul><li><a href="#String-stringify">stringify</a></li><li><a href="#String-pad">pad</a></li></ul></li><li> <a href="#Objects">对象</a><ul><li><a href="#Objects-hasProp">hasProp</a></li><li><a href="#Objects-namespace">namespace</a></li><li><a href="#Objects-keys">keys</a></li></ul></li><li> <a href="#Arrays">数组及类数组</a><ul><li><a href="#Arrays-slice">slice</a></li></ul></li><li> <a href="#Date">日期时间</a><ul><li><a href="#Date-date">date</a></li><li><a href="#Date-now">now</a></li></ul></li><li> <a href="#Data_type">变量检测</a><ul><li><a href="#Data_type-isInteger">isInteger</a></li><li><a href="#Data_type-isArrayLike">isArrayLike</a></li><li><a href="#Data_type-isEmpty">isEmpty</a></li><li><a href="#Data_type-isElement">isElement</a></li><li><a href="#Data_type-equal">equal</a></li></ul></li></ul><h2 id="Setting">名称设置</h2><h3 id="Setting-mask">mask</h3><p>更改 YouYu 依附在全局对象上的名字。</p><div class="Api"> <code class="Api-invoke">YouYu.mask(guise)</code> <span class="Api-returnValue">Boolean</span><dl class="Api-parameters"><dt>guise</dt><dd><p>[String]</p></dd></dl></div><p>原来的名字会被删除，即访问 <code>YouYu</code> 会报错。</p><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">mask</span><span class="p">(</span><span class="s2">"YouYu_new"</span><span class="p">);</span>
 <span class="o">=&gt;</span> <span class="kc">true</span>
 
 <span class="nx">YouYu_new</span><span class="p">;</span>
@@ -114,4 +114,203 @@
 <span class="p">},</span> <span class="nx">Geometry</span><span class="p">);</span>
 
 <span class="nx">Geometry</span><span class="p">;</span>
-<span class="o">=&gt;</span> <span class="nb">Object</span> <span class="p">{</span><span class="nx">perimeter</span><span class="o">:</span> <span class="kd">function</span><span class="p">,</span> <span class="nx">area</span><span class="o">:</span> <span class="kd">function</span><span class="p">,</span> <span class="nx">volume</span><span class="o">:</span> <span class="kd">function</span><span class="p">}</span></code></pre></div></div></section><div class="Doc-toc col-md-3"> <nav><ul class="Doc-navs"><li><a href="/docs/youyu/">介绍</a></li><li class="is-selected"> <a href="/docs/youyu/apis/core/">API</a><ul class="Doc-subnavs"><li class="is-selected"><a href="/docs/youyu/apis/core/">核心</a></li><li><a href="/docs/youyu/apis/utils/">工具</a></li><li><a href="/docs/youyu/apis/project/">项目开发</a></li></ul></li><li><a href="/docs/youyu/turbolinks/">兼容 Turbolinks</a></li></ul> </nav></div></div></div></div> </main> <script src="/assets/pages/docs-125ee6db79f418b1d33e08e40f8d72f9.js"></script></body></html>
+<span class="o">=&gt;</span> <span class="nb">Object</span> <span class="p">{</span><span class="nx">perimeter</span><span class="o">:</span> <span class="kd">function</span><span class="p">,</span> <span class="nx">area</span><span class="o">:</span> <span class="kd">function</span><span class="p">,</span> <span class="nx">volume</span><span class="o">:</span> <span class="kd">function</span><span class="p">}</span></code></pre></div></div><h2 id="String">字符串</h2><h3 id="String-stringify">stringify</h3><p>将任意类型的变量转化为字符串。</p><div class="Api"> <code class="Api-invoke">YouYu.stringify(target)</code> <span class="Api-returnValue">String</span><dl class="Api-parameters"><dt>target</dt><dd><p>[Anything]</p></dd></dl></div><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="mi">1234567</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"1234567"</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="s2">"1234567"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"\"1234567\""</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"true"</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="mi">1234567</span> <span class="o">+</span> <span class="s2">"1234567"</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="o">=&gt;</span> <span class="s2">"function () {</span>
+<span class="s2">      return 1234567 + \"1234567\";</span>
+<span class="s2">    }"</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">stringify</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="mi">7</span><span class="p">]]);</span>
+<span class="o">=&gt;</span> <span class="s2">"[1,2,3,[4,[5,6],7]]"</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span>
+  <span class="nx">n</span><span class="o">:</span> <span class="mi">1234567</span><span class="p">,</span>
+  <span class="nx">s</span><span class="o">:</span> <span class="s2">"1234567"</span><span class="p">,</span>
+  <span class="nx">b</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">f</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mi">1234567</span> <span class="o">+</span> <span class="s2">"1234567"</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+<span class="o">=&gt;</span> <span class="s2">"{\"n\":1234567,\"s\":\"1234567\",\"b\":true,\"f\":function () {</span>
+<span class="s2">      return 1234567 + \"1234567\";</span>
+<span class="s2">    }}"</span></code></pre></div></div><h3 id="String-pad">pad</h3><p>用指定占位符填补字符串。</p><div class="Api"> <code class="Api-invoke">YouYu.pad(target, length[, placeholder])</code> <span class="Api-returnValue">String</span><dl class="Api-parameters"><dt>target</dt><dd><p>[String]</p> 原字符串</dd><dt>length</dt><dd><p>[Integer]</p><p>必须为整数，可以是正数也可以是负数。</p><p>数字部分代表目标字符串的长度，正负号代表占位符添加的位置：正数时添加到原字符串的后边；负数时添加到原字符串的前边。</p></dd><dt>placeholder</dt><dd><p>[String]</p><p>占位符，只能是一个字符，默认为空格（<code>\x20</code>）。</p></dd></dl></div><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">pad</span><span class="p">(</span><span class="s2">"b"</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"e"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"bee"</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">pad</span><span class="p">(</span><span class="s2">"var foo;"</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"  var foo;"</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">pad</span><span class="p">(</span><span class="s2">"var foo;"</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.9</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"var foo;"</span></code></pre></div></div><h2 id="Objects">对象</h2><h3 id="Objects-hasProp">hasProp</h3><p>判断指定对象自身是否拥有指定属性。</p><div class="Api"> <code class="Api-invoke">YouYu.hasProp(prop[, object])</code> <span class="Api-returnValue">Boolean</span><dl class="Api-parameters"><dt>prop</dt><dd><p>[String]</p></dd><dt>object</dt><dd><p>[Object]</p><p>被检测属性的宿主。如果忽略，则为 YouYu 自身。</p></dd></dl></div><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">hasProp</span><span class="p">(</span><span class="s2">"hasProp"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">hasProp</span><span class="p">(</span><span class="s2">"document"</span><span class="p">,</span> <span class="nb">window</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span></code></pre></div></div><h3 id="Objects-namespace">namespace</h3><p>通过命名空间格式的字符串从指定对象上获取值。若指定对象上不存在相应的 key，则创建一个空对象。</p><div class="Api"> <code class="Api-invoke">YouYu.namespace(target[, nsStr1][, nsStrN][, isGlobal])</code> <span class="Api-returnValue">Object</span><dl class="Api-parameters"><dt>target</dt><dd><p>[Object]</p></dd><dt>nsStr1</dt><dd><p>[String]</p></dd><dt>nsStrN</dt><dd><p>[String]</p></dd><dt>isGlobal</dt><dd><p>[Boolean]</p></dd></dl></div><p><code>nsStr1</code> 和 <code>nsStrN</code> 是以 <code>.</code> 分割的由数字、字母和下划线所组成的字符串。若 <code>isGlobal</code> 的值为 <code>true</code>，则 <code>target</code> 为全局对象。</p><h3 id="Objects-keys">keys</h3><p>获取指定对象的 key 集合。</p><div class="Api"> <code class="Api-invoke">YouYu.keys(target)</code> <span class="Api-returnValue">Array</span><dl class="Api-parameters"><dt>target</dt><dd><p>[Object]</p></dd></dl></div><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">foo</span><span class="o">:</span> <span class="s2">"foo"</span><span class="p">,</span>
+  <span class="nx">bar</span><span class="o">:</span> <span class="s2">"bar"</span><span class="p">,</span>
+  <span class="nx">foobar</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">foo</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">bar</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[</span><span class="s2">"bar"</span><span class="p">,</span> <span class="s2">"foo"</span><span class="p">,</span> <span class="s2">"foobar"</span><span class="p">]</span></code></pre></div></div><h2 id="Arrays">数组及类数组</h2><h3 id="Arrays-slice">slice</h3><p>返回数组、类数组对象的片段。</p><div class="Api"> <code class="Api-invoke">YouYu.slice(target[, begin][, end])</code> <span class="Api-returnValue">Array</span><dl class="Api-parameters"><dt>target</dt><dd><p>[Array / Array-like object]</p></dd><dt>begin</dt><dd><p>[Integer]</p></dd><dt>end</dt><dd><p>[Integer]</p></dd></dl></div><p><code>begin</code> 和 <code>end</code> 是以零开始的索引，为负数时表示从 <code>target</code> 的末尾算起的偏移量。当 <code>begin</code> 被忽略时从 <code>0</code> 开始截取；<code>end</code> 被忽略时，截取到 <code>target</code> 的末尾。</p><p class="note">String 类型也能够使用。</p><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">];</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="o">===</span> <span class="nx">arr</span><span class="p">;</span>
+<span class="o">=&gt;</span> <span class="kc">false</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[]</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[]</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span></code></pre></div></div><h2 id="Date">日期时间</h2><h3 id="Date-date">date</h3><p>格式化日期</p><div class="Api"> <code class="Api-invoke">YouYu.date(format[, date])</code> <span class="Api-returnValue">String</span><dl class="Api-parameters"><dt>format</dt><dd><p>[String]</p><p>指定格式化的形式（参照<cite><a href="http://php.net/manual/en/function.date.php" target="_blank">PHP: date</a></cite>）</p></dd><dt>date</dt><dd><p>[Date / String]</p><p>日期对象或能被解析成日期对象的字符串（参照<cite><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse" target="_blank">Date.parse()</a></cite>）</p></dd></dl></div><p>如果 <code>date</code> 被忽略或者非法，则返回当前时间的格式化后的结果。</p><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// ISO 8601 扩展格式（UTC）</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="s2">"y-m-d H:i:s"</span><span class="p">,</span> <span class="s2">"1994-03-28T10:11:22"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"94-03-28 18:11:22"</span>
+
+<span class="c1">// ISO 8601 扩展格式（指定时区）</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="s2">"y-m-d H:i:s"</span><span class="p">,</span> <span class="s2">"1994-03-28T10:11:22+0800"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"94-03-28 10:11:22"</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="s2">"F j, Y"</span><span class="p">,</span> <span class="s2">"Feb 24 1955 GMT"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"February 24, 1955"</span>
+
+<span class="c1">// 传入当前时间的日期对象</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="s2">"Y年n月j日"</span><span class="p">,</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+<span class="o">=&gt;</span> <span class="s2">"2014年7月24日"</span>
+
+<span class="c1">// 传入错误非法日期参数，返回当前时间</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="s2">"Y年n月j日"</span><span class="p">,</span> <span class="s2">"YouYu is good!"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"2014年7月24日"</span>
+
+<span class="c1">// 忽略日期参数，返回当前时间</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">date</span><span class="p">(</span><span class="s2">"Y年n月j日"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="s2">"2014年7月24日"</span></code></pre></div></div><h3 id="Date-now">now</h3><p>取得当前时间</p><div class="Api"> <code class="Api-invoke">YouYu.now([isObject])</code> <span class="Api-returnValue">Integer / Date</span><dl class="Api-parameters"><dt>isObject</dt><dd><p>[Boolean]</p> 值为 <code>true</code> 时返回日期对象</dd></dl></div><p>默认返回毫秒，即 <code>(new Date()).getTime()</code>。</p><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">now</span><span class="p">();</span>
+<span class="o">=&gt;</span> <span class="mi">1406183042252</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">now</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="nx">Thu</span> <span class="nx">Jul</span> <span class="mi">24</span> <span class="mi">2014</span> <span class="mi">14</span><span class="o">:</span><span class="mi">24</span><span class="o">:</span><span class="mi">05</span> <span class="nx">GMT</span><span class="o">+</span><span class="mi">0800</span> <span class="p">(</span><span class="nx">China</span> <span class="nx">Standard</span> <span class="nx">Time</span><span class="p">)</span></code></pre></div></div><h2 id="Data_type">变量检测</h2><h3 id="Data_type-isInteger">isInteger</h3><p>判断是否为一个整型数字。</p><div class="Api"> <code class="Api-invoke">YouYu.isInteger(object)</code> <span class="Api-returnValue">Boolean</span><dl class="Api-parameters"><dt>object</dt><dd><p>[Anything]</p></dd></dl></div><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="mh">0x88</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="mi">0100</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="o">+</span><span class="mf">10.0</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="s2">"0x88"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="s2">"0100"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="s2">"+10.0"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="s2">"-1"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span></code></pre></div></div><h3 id="Data_type-isArrayLike">isArrayLike</h3><p>判断是否为类数组对象。</p><div class="Api"> <code class="Api-invoke">YouYu.isArrayLike(object)</code> <span class="Api-returnValue">Boolean</span><dl class="Api-parameters"><dt>object</dt><dd><p>[Anything]</p></dd></dl></div><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">isArrayLike</span><span class="p">([]);</span>
+<span class="o">=&gt;</span> <span class="kc">false</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isArrayLike</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">links</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isArrayLike</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"div"</span><span class="p">));</span>
+<span class="o">=&gt;</span> <span class="kc">true</span></code></pre></div></div><h3 id="Data_type-isEmpty">isEmpty</h3><p>判断是否为空。</p><div class="Api"> <code class="Api-invoke">YouYu.isEmpty(object)</code> <span class="Api-returnValue">Boolean</span><dl class="Api-parameters"><dt>object</dt><dd><p>[Anything]</p></dd></dl></div><p>当 <code>object</code> 的值是以下几种：</p><ul><li><code>null</code></li><li><code>undefined</code></li><li><code>""</code></li><li><code>{}</code></li></ul><p>或者是数组、类数组对象并且 <code>object.length</code> 的值为 <code>0</code> 时，结果返回 <code>true</code>。</p><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">(</span><span class="kc">undefined</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">([]);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">({});</span>
+<span class="o">=&gt;</span> <span class="kc">true</span></code></pre></div></div><h3 id="Data_type-isElement">isElement</h3><p>判断是否为 DOM 元素节点。</p><div class="Api"> <code class="Api-invoke">YouYu.isElement(object)</code> <span class="Api-returnValue">Boolean</span><dl class="Api-parameters"><dt>object</dt><dd><p>[Anything]</p></dd></dl></div><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">YouYu</span><span class="p">.</span><span class="nx">isElement</span><span class="p">(</span><span class="nb">document</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">false</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isElement</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">isElement</span><span class="p">(</span><span class="nb">window</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">false</span></code></pre></div></div><h3 id="Data_type-equal">equal</h3><p>比较两个同类型的变量是否相等</p><div class="Api"> <code class="Api-invoke">YouYu.equal(base, target[, strict])</code> <span class="Api-returnValue">Boolean</span><dl class="Api-parameters"><dt>base</dt><dd><p>[Anything]</p></dd><dt>target</dt><dd><p>[Anything]</p></dd><dt>strict</dt><dd><p>[Boolean]</p> 值为 <code>true</code> 时严格比较</dd></dl></div><p>当 <code>base</code> 和 <code>target</code> 为纯对象或数组时，如果 <code>strict</code> 的值为 <code>true</code> 则比较它们的引用，否则对它们的结构进行对比。</p><div class="example-code"><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">arr3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">obj1</span> <span class="o">=</span> <span class="p">{</span><span class="nx">foo</span><span class="o">:</span> <span class="s2">"foo"</span><span class="p">,</span> <span class="nx">bar</span><span class="o">:</span> <span class="s2">"bar"</span><span class="p">,</span> <span class="nx">foobar</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">foo</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">bar</span><span class="p">;</span> <span class="p">}};</span>
+<span class="kd">var</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="p">{</span><span class="nx">foo</span><span class="o">:</span> <span class="s2">"foo"</span><span class="p">,</span> <span class="nx">bar</span><span class="o">:</span> <span class="s2">"bar"</span><span class="p">,</span> <span class="nx">foobar</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">foo</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">bar</span><span class="p">;</span> <span class="p">}};</span>
+<span class="kd">var</span> <span class="nx">obj3</span> <span class="o">=</span> <span class="p">{</span><span class="nx">foo</span><span class="o">:</span> <span class="s2">"foo"</span><span class="p">,</span> <span class="nx">foobar</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">foo</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">bar</span><span class="p">;</span> <span class="p">},</span> <span class="nx">bar</span><span class="o">:</span> <span class="s2">"bar"</span><span class="p">};</span>
+
+<span class="c1">// 比较两个结构相同、值也相同的数组</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">arr1</span><span class="p">,</span> <span class="nx">arr2</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="c1">// 严格比较两个结构相同、值也相同的数组</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">arr1</span><span class="p">,</span> <span class="nx">arr2</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">false</span>
+
+<span class="c1">// 比较两个结构不同、值相同的数组</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">arr1</span><span class="p">,</span> <span class="nx">arr3</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">false</span>
+
+<span class="c1">// 比较两个结构相同、key 顺序相同的纯对象</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="c1">// 严格比较两个结构相同、key 顺序相同的纯对象</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj2</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">false</span>
+
+<span class="c1">// 比较两个结构相同、key 顺序不同的纯对象</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">obj1</span><span class="p">,</span> <span class="nx">obj3</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="c1">// 比较两个值相同的原始类型</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="c1">// 严格比较两个值相同的原始类型</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="c1">// 比较值相同的原始类型和对应的包装对象</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="k">new</span> <span class="nb">Number</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+<span class="o">=&gt;</span> <span class="kc">true</span>
+
+<span class="c1">// 严格比较值相同的原始类型和对应的包装对象</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="k">new</span> <span class="nb">Number</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="kc">true</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">false</span>
+
+<span class="c1">// 比较两个在用 == 时返回 true 的原始类型</span>
+<span class="nx">YouYu</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">);</span>
+<span class="o">=&gt;</span> <span class="kc">false</span></code></pre></div></div></section><div class="Doc-toc col-md-3"> <nav><ul class="Doc-navs"><li><a href="/docs/youyu/">介绍</a></li><li class="is-selected"> <a href="/docs/youyu/apis/core/">API</a><ul class="Doc-subnavs"><li class="is-selected"><a href="/docs/youyu/apis/core/">核心</a></li><li><a href="/docs/youyu/apis/components/">组件</a></li><li><a href="/docs/youyu/apis/project/">项目开发</a></li></ul></li><li><a href="/docs/youyu/turbolinks/">兼容 Turbolinks</a></li></ul> </nav></div></div></div></div> </main> <script src="/assets/pages/docs-125ee6db79f418b1d33e08e40f8d72f9.js"></script></body></html>
