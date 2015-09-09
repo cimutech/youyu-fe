@@ -16,14 +16,6 @@
 
 除了 `_data` 和 `_includes` 之外，其他 Jekyll 标准的文件夹就不做多说明。
 
-`_assets` 中的文件结构与有渔项目中的 `app/assets` 基本保持一致，尤其是跟有渔库及主题相关的文件，在修改后要更新到有渔项目中。它们分别为：
-
-* `components`
-* `helper`
-* `project`
-* `themes`
-* `youyu`
-
 ```
 .
 ├─── _assets                          === 资源文件（结构与 rails 一样）
@@ -79,3 +71,11 @@
   │ └─── breadcrumb.html              --- 面包屑
   └─── head.html                      --- <head> 标签内部
 ```
+
+`_assets` 中的文件结构与有渔项目中的 `app/assets` 基本保持一致，尤其是跟有渔库及主题相关的文件，在修改后要更新到有渔项目中。它们分别为：
+
+* `components`
+* `helper`
+* `project`
+* `themes`
+* `youyu`
